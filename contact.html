@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bineth Atapattu</title>
-  <meta name="description" content="Bineth Atapattu — Mechatronic Systems Engineering student specializing in simulation in mechatronics." />
+  <title>Contact | Bineth Atapattu</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,11 +15,11 @@
   <nav>
     <div class="inner">
       <div class="menu">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="cv.html">CV</a>
         <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </div>
       <a class="social" href="https://www.linkedin.com/in/bineth-losara-8b21002a8/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24" role="img"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
@@ -28,30 +27,33 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="inner">
-      <img class="photo-rect" src="binethfacephoto.png" alt="Bineth Atapattu" />
-      <div>
-        <h1 class="h-navy">Mechatronics</h1>
-        <p class="hero-sub">Designing and simulating systems where mechanical engineering, electronics, and software meet.</p>
-      </div>
-    </div>
+  <!-- CONTACT -->
+  <section class="contact-head">
+    <h2 class="h-navy">Contact Me</h2>
   </section>
 
-  <!-- ABOUT BAND -->
-  <section class="about-band">
-    <div class="inner">
-      <h2>About</h2>
-      <p>I'm Bineth — a Mechatronic Systems Engineering student at Rhine-Waal University of Applied Sciences in Germany, focused on simulation: modelling how mechanical and electronic systems behave before they're built. I work across CAD and design, programming, control systems, and embedded electronics.</p>
+  <!-- NOTE: form is not yet wired to send. To make it work we need (1) your email and
+       (2) a free Formspree endpoint. Until then, the LinkedIn link below is the working contact. -->
+  <form class="contact-form" action="#" onsubmit="return false;">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
     </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section" style="text-align:center;">
-    <h2 class="h-navy" style="font-size:1.6rem; margin-bottom:24px;">Let's connect</h2>
-    <a href="contact.html" class="btn">Contact Me</a>
-  </section>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" />
+    </div>
+    <div class="field">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Type the subject" />
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+    </div>
+    <button type="submit" class="submit">Submit</button>
+    <p class="contact-alt">Or reach me directly on <a href="https://www.linkedin.com/in/bineth-losara-8b21002a8/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </form>
 
   <footer class="site">© <span class="year"></span> Bineth Atapattu</footer>
   <script>document.querySelectorAll('.year').forEach(e=>e.textContent=new Date().getFullYear());</script>
