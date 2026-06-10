@@ -88,8 +88,8 @@ nav .social svg { width: 22px; height: 22px; fill: var(--navy); }
   max-width: var(--max); margin: 0 auto; padding: 80px 32px 90px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center;
 }
-.story .photo-circle {
-  width: min(44vw, 460px); aspect-ratio: 1/1; border-radius: 50%;
+.story .photo-rect-about {
+  width: min(44vw, 460px); aspect-ratio: 4/5; border-radius: 4px;
   object-fit: cover; object-position: center 22%; background: #e6e6e6; justify-self: center;
 }
 .story h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 28px; }
@@ -149,7 +149,7 @@ footer.site { text-align: center; padding: 34px; color: var(--muted); font-size:
   .hero .inner, .story .inner { grid-template-columns: 1fr; gap: 36px; text-align: center; }
   .hero .hero-sub, .story p, .story p.note { margin-left: auto; margin-right: auto; }
   .hero .photo-rect { max-width: 320px; margin: 0 auto; }
-  .story .photo-circle { width: min(72vw, 340px); }
+  .story .photo-rect-about { width: min(72vw, 320px); }
   .tl-row { grid-template-columns: 1fr; gap: 8px; text-align: center; justify-items: center; }
   nav .social { display: none; }
   nav .menu { gap: 18px; }
